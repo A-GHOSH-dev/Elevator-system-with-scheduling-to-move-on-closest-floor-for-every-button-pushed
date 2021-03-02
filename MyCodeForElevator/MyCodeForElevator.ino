@@ -46,21 +46,21 @@ void loop() {
   buttonState3 = digitalRead(btn3);
   buttonState4 = digitalRead(btn4);
 
-//4th Floor
-if(buttonState4 == HIGH){
-while(i<4){   
-    i++;
-    //go up
-    myStepper.step(-stepsPerRevolution*(4-i));
+  //4th Floor
+  if(buttonState4 == HIGH){
+    while(i<4){   
+        i++;
+        //go up
+        myStepper.step(-stepsPerRevolution*(4-i));
     
-  }
-  i=4;
+    }
+    i=4;
 
   }
   //Reached 4th Floor
 
   
- //3rd floor
+  //3rd floor
   if(buttonState3==HIGH){
   
     if(i>3){
@@ -71,7 +71,7 @@ while(i<4){
     
     
       }
-    }
+   }
     if(i<3){
       while(i<3){
         i++;
@@ -84,7 +84,7 @@ while(i<4){
     }    
     
     
-  i=3; //now lift is at 3rd floor
+   i=3; //now lift is at 3rd floor
    
    
 
