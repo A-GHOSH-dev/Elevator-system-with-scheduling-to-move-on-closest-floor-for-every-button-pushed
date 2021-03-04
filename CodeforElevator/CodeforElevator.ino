@@ -29,56 +29,7 @@ void loop() {
    current=abs(destination);
    }
    
-//    if (a==0) {
-//        if(prev=0)
-//            continue;
-//        else if (prev>0){
-//            myStepper.step(-stepsPerRevolution*prev);
-//            prev=0;
-//        }
-//    }
-//    else if (b==0) {
-//        if(prev<1){
-//            myStepper.step(stepsPerRevolution);
-//            prev=1;
-//        }
-//        else if (prev=1){
-//            continue;
-//        }
-//        else if (prev>1){
-//            myStepper.step(-stepsPerRevolution*(prev-1));
-//            prev=1;
-//        }
-//    }
-//
-//
-//    else if (c==0) {
-//        if(prev<2){
-//            myStepper.step(stepsPerRevolution*(2-prev));
-//            prev=2;
-//        }
-//        else if (prev=2){
-//            continue;
-//        }
-//        else if (prev>2){
-//            myStepper.step(-stepsPerRevolution*(prev-2));
-//            prev=2;
-//    }
-//
-//
-//    else if (d==3) {
-//        if(prev<3){
-//            myStepper.step(stepsPerRevolution*(3-prev));
-//            prev=3;
-//        }
-//        else if (prev=3){
-//            continue;
-//        }
-//        else if (prev>3){
-//            myStepper.step(-stepsPerRevolution*(prev-3));
-//            prev=3;
-//        }
-    }
+
 
 void input()
 {
