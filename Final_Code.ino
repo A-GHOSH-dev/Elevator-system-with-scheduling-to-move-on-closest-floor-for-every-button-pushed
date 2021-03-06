@@ -26,7 +26,7 @@ void setup() {
 // to add the floor no. in a queue 
 void enque(int item)
 {
-    if (rear==4)
+    if (rear==3)
     {
         rear=-1;
     }
@@ -46,7 +46,7 @@ void enque(int item)
 // to remove the floor already reached
 void deque()
 {
-    if (front==4)
+    if (front==3)
     {
         front=-1;
     }
@@ -69,28 +69,28 @@ void loop()
         a=2;
         if(check(a))
         {
-            enque(1);
+            enque(2);
         }
     }
     else if (digitalRead(4)==HIGH){     // taking inputs from pin no. 4
        a=3;
         if(check(a))
         {
-            enque(1);
+            enque(3);
         }
     }
     else if(digitalRead(5)==HIGH){       // taking inputs from pin no. 5
        a=4;
         if(check(a))
         {
-            enque(1);
+            enque(4);
         }
     }
     for(int i=0;i<4;i++)
     {   if (floor[i]!=0)
         {
             myStepper.step(stepsPerRevolution*(current-floor[i]));    // moving the elevator to its desiered floor
-            current=button[i];
+            current=floor[i];
             deque();
         }
     }
